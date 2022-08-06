@@ -22,6 +22,8 @@
 		D08B0D00289DEAD0008EA269 /* TimeConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CFE289DEAD0008EA269 /* TimeConvert.swift */; };
 		D08B0D02289DF061008EA269 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D01289DF061008EA269 /* ProgressBar.swift */; };
 		D08B0D04289DF29F008EA269 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D03289DF29F008EA269 /* SubView.swift */; };
+		D08B0D06289DFB4C008EA269 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D05289DFB4C008EA269 /* Settings.swift */; };
+		D08B0D08289E019D008EA269 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D07289E019D008EA269 /* Vehicles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D08B0CFE289DEAD0008EA269 /* TimeConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConvert.swift; sourceTree = "<group>"; };
 		D08B0D01289DF061008EA269 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		D08B0D03289DF29F008EA269 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		D08B0D05289DFB4C008EA269 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D08B0D07289E019D008EA269 /* Vehicles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +123,11 @@
 		D08B0CEC289DE5E3008EA269 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D08B0CDC289DDCCD008EA269 /* ContentView.swift */,
+				D08B0D07289E019D008EA269 /* Vehicles.swift */,
+				D08B0D05289DFB4C008EA269 /* Settings.swift */,
 				D08B0D03289DF29F008EA269 /* SubView.swift */,
 				D08B0D01289DF061008EA269 /* ProgressBar.swift */,
-				D08B0CDC289DDCCD008EA269 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			files = (
 				D08B0CF6289DE6C1008EA269 /* TokenData.swift in Sources */,
 				D08B0D02289DF061008EA269 /* ProgressBar.swift in Sources */,
+				D08B0D06289DFB4C008EA269 /* Settings.swift in Sources */,
 				D08B0CDD289DDCCD008EA269 /* ContentView.swift in Sources */,
 				D08B0D00289DEAD0008EA269 /* TimeConvert.swift in Sources */,
 				D08B0CF7289DE6C1008EA269 /* VehicleData.swift in Sources */,
@@ -257,6 +264,7 @@
 				D08B0CF8289DE6C1008EA269 /* LocationData.swift in Sources */,
 				D08B0D04289DF29F008EA269 /* SubView.swift in Sources */,
 				D08B0CF4289DE6C1008EA269 /* StatusData.swift in Sources */,
+				D08B0D08289E019D008EA269 /* Vehicles.swift in Sources */,
 				D08B0CF5289DE6C1008EA269 /* ChargeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

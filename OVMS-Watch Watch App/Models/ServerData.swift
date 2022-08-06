@@ -90,9 +90,9 @@ class ServerData: NSObject, ObservableObject {
     var charge: Charge = Charge.dummy
     var status: Status = Status.dummy
     var location: Location = Location.dummy
-    @Published var chargePercent: Double = Double(Charge.dummy.soc) ?? 0.0
-    @Published var currMode: String = "I"
     var mode: Mode = .idle
+    @Published var chargePercent: Double = Double(Charge.dummy.soc) ?? 0.0
+    @Published var currMode = Mode.idle.identifier
     
 }
 
@@ -116,3 +116,5 @@ func getURL(for endpoint: Endpoint) -> String? {
     urlComponents.query = "username=\(userName)&password=\(String(describing: password))"
     return urlComponents.url?.absoluteString
 }
+
+

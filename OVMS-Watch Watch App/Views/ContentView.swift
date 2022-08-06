@@ -9,10 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var model: ServerData
-
+    @State var userName: String = ""
+    @State var password: String = ""
+    @State private var oldUsername = ""
+    @State private var isPresentingSettingsView = false
     var body: some View {
         GeometryReader { watchGeo in
             VStack {
+                NavigationLink(
+                    destination: Vehicles(model: model, vehicles: vehicles),
+                    label: {
+                        Image(systemName: "car")
+                        Text(vehicles[0].id)
+                            .font(.caption2)
+                    })
+                .frame(width: watchGeo.size.width * 0.79, height: watchGeo.size.height * 0.14)
+                .padding()
+                
                 Image("battery_000")
                     .resizable()
                     .scaledToFit()
@@ -47,6 +60,12 @@ struct ContentView: View {
                 default:
                     SubView(Text1: "Motor", Data1: "\(model.status.temperature_motor)°", Text2: "Batt", Data2: "\(model.status.temperature_battery)°", Text3: "PEM", Data3: "\(model.status.temperature_pem)°", Text4: "Amb", Data4: "\(model.status.temperature_ambient)°", Text5: "Cabin", Data5: "\(model.status.temperature_cabin)°", Text6: "12V", Data6: model.status.vehicle12v)
                 }
+            }
+            .task {
+                await currentToken.getToken()
+                model.status = await model.status.getStatus()
+                model.chargePercent = Double(model.status.soc) ?? 0.0
+                print("Charge % = \(model.chargePercent)")
             }
         }
     }

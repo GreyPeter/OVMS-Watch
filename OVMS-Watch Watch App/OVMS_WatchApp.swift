@@ -12,7 +12,20 @@ struct OVMS_Watch_Watch_AppApp: App {
     @StateObject private var serverData = ServerData.shared
     var body: some Scene {
         WindowGroup {
-            ContentView(model: serverData)
+            NavigationView {
+                ContentView(model: serverData)
+            }
+            .onAppear {
+                let defaults = UserDefaults.standard
+                if userName == "" {
+                    if let user = defaults.string(forKey: "username") {
+                        userName = user
+                        print("(WatchApp) Username = \(userName)")
+                    } else {
+                        print("(WatchApp) Error - Username not set")
+                    }
+                }
+            }
         }
     }
 }
