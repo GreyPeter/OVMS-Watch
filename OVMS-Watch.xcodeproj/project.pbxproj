@@ -12,6 +12,16 @@
 		D08B0CDD289DDCCD008EA269 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CDC289DDCCD008EA269 /* ContentView.swift */; };
 		D08B0CDF289DDCCF008EA269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08B0CDE289DDCCF008EA269 /* Assets.xcassets */; };
 		D08B0CE2289DDCCF008EA269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08B0CE1289DDCCF008EA269 /* Preview Assets.xcassets */; };
+		D08B0CF4289DE6C1008EA269 /* StatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CEE289DE6C0008EA269 /* StatusData.swift */; };
+		D08B0CF5289DE6C1008EA269 /* ChargeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CEF289DE6C0008EA269 /* ChargeData.swift */; };
+		D08B0CF6289DE6C1008EA269 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CF0289DE6C0008EA269 /* TokenData.swift */; };
+		D08B0CF7289DE6C1008EA269 /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CF1289DE6C0008EA269 /* VehicleData.swift */; };
+		D08B0CF8289DE6C1008EA269 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CF2289DE6C0008EA269 /* LocationData.swift */; };
+		D08B0CFB289DEA1E008EA269 /* ServerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CFA289DEA1E008EA269 /* ServerData.swift */; };
+		D08B0CFF289DEAD0008EA269 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CFD289DEAD0008EA269 /* KeychainService.swift */; };
+		D08B0D00289DEAD0008EA269 /* TimeConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0CFE289DEAD0008EA269 /* TimeConvert.swift */; };
+		D08B0D02289DF061008EA269 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D01289DF061008EA269 /* ProgressBar.swift */; };
+		D08B0D04289DF29F008EA269 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B0D03289DF29F008EA269 /* SubView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,16 @@
 		D08B0CDC289DDCCD008EA269 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D08B0CDE289DDCCF008EA269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08B0CE1289DDCCF008EA269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D08B0CEE289DE6C0008EA269 /* StatusData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusData.swift; sourceTree = "<group>"; };
+		D08B0CEF289DE6C0008EA269 /* ChargeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeData.swift; sourceTree = "<group>"; };
+		D08B0CF0289DE6C0008EA269 /* TokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		D08B0CF1289DE6C0008EA269 /* VehicleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
+		D08B0CF2289DE6C0008EA269 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		D08B0CFA289DEA1E008EA269 /* ServerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerData.swift; sourceTree = "<group>"; };
+		D08B0CFD289DEAD0008EA269 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		D08B0CFE289DEAD0008EA269 /* TimeConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConvert.swift; sourceTree = "<group>"; };
+		D08B0D01289DF061008EA269 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		D08B0D03289DF29F008EA269 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				D08B0CDA289DDCCC008EA269 /* OVMS_WatchApp.swift */,
-				D08B0CDC289DDCCD008EA269 /* ContentView.swift */,
+				D08B0CEC289DE5E3008EA269 /* Views */,
+				D08B0CED289DE5F5008EA269 /* Models */,
+				D08B0CFC289DEA94008EA269 /* Helpers */,
 				D08B0CDE289DDCCF008EA269 /* Assets.xcassets */,
 				D08B0CE0289DDCCF008EA269 /* Preview Content */,
 			);
@@ -92,6 +114,38 @@
 				D08B0CE1289DDCCF008EA269 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D08B0CEC289DE5E3008EA269 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D08B0D03289DF29F008EA269 /* SubView.swift */,
+				D08B0D01289DF061008EA269 /* ProgressBar.swift */,
+				D08B0CDC289DDCCD008EA269 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D08B0CED289DE5F5008EA269 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D08B0CFA289DEA1E008EA269 /* ServerData.swift */,
+				D08B0CEF289DE6C0008EA269 /* ChargeData.swift */,
+				D08B0CF2289DE6C0008EA269 /* LocationData.swift */,
+				D08B0CEE289DE6C0008EA269 /* StatusData.swift */,
+				D08B0CF0289DE6C0008EA269 /* TokenData.swift */,
+				D08B0CF1289DE6C0008EA269 /* VehicleData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D08B0CFC289DEA94008EA269 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D08B0CFD289DEAD0008EA269 /* KeychainService.swift */,
+				D08B0CFE289DEAD0008EA269 /* TimeConvert.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +246,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08B0CF6289DE6C1008EA269 /* TokenData.swift in Sources */,
+				D08B0D02289DF061008EA269 /* ProgressBar.swift in Sources */,
 				D08B0CDD289DDCCD008EA269 /* ContentView.swift in Sources */,
+				D08B0D00289DEAD0008EA269 /* TimeConvert.swift in Sources */,
+				D08B0CF7289DE6C1008EA269 /* VehicleData.swift in Sources */,
 				D08B0CDB289DDCCC008EA269 /* OVMS_WatchApp.swift in Sources */,
+				D08B0CFB289DEA1E008EA269 /* ServerData.swift in Sources */,
+				D08B0CFF289DEAD0008EA269 /* KeychainService.swift in Sources */,
+				D08B0CF8289DE6C1008EA269 /* LocationData.swift in Sources */,
+				D08B0D04289DF29F008EA269 /* SubView.swift in Sources */,
+				D08B0CF4289DE6C1008EA269 /* StatusData.swift in Sources */,
+				D08B0CF5289DE6C1008EA269 /* ChargeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
